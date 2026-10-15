@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+/* ======================================
+   PIZZAHOUSE — DARK MODE
+====================================== */
+
+:root {
+  color-scheme: light;
+  --page-bg: #fffaf5;
+  --surface: #ffffff;
+  --text: #202024;
+  --muted: #696a73;
+  --border: #f0e5dc;
+  --input-bg: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #111214;
+  --surface: #1b1d21;
+  --text: #f5f5f5;
+  --muted: #b4b5bd;
+  --border: #34363d;
+  --input-bg: #24262b;
+}
+
+/* Main page */
+body,
+.pizza-app,
+.shop-page {
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+/* Headings and text */
+.section-heading h2,
+.pizza-name-row h3,
+.pizza-price,
+.shop-content > h1,
+.empty-cart h2,
+.cart-item-info h3,
+.cart-item-end > strong,
+.cart-summary h2,
+.payment-container > h1,
+.payment-card h2 {
+  color: var(--text);
+}
+
+.section-heading > div:first-child > p,
+.shop-subtitle,
+.empty-cart p,
+.cart-item-info p,
+.checkout-note {
+  color: var(--muted);
+}
+
+/* Cards and panels */
+.pizza-card,
+.category-chip,
+.state-message,
+.empty-cart,
+.cart-item,
+.cart-summary,
+.payment-card {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.pizza-description {
+  color: var(--muted);
+}
+
+/* Inputs */
+.sort-area select,
+.payment-card input,
+.payment-card textarea,
+.payment-card select {
+  background: var(--input-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.sort-area label,
+.sort-area > span {
+  color: var(--text);
+}
+
+.hero-search {
+  background: #ffffff;
+  color: #25252b;
+}
+
+/* Cart and payment */
+.quantity-controls {
+  border-color: var(--border);
+}
+
+.cart-summary hr,
+.payment-grand-total {
+  border-color: var(--border);
+}
+
+.razorpay-method {
+  background: #29201c;
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+.payment-subtitle,
+.payment-total-row,
+.payment-disclaimer {
+  color: var(--muted);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 39px;
+  padding: 0 12px;
+  border: 1px solid #514943;
+  border-radius: 12px;
+  background: #242221;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: #383330;
+  transform: translateY(-1px);
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  background: #f6a623;
+  color: #191919;
+  border-color: #f6a623;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  background: #ffc04d;
+}
+
+/* Smooth theme transition */
+body,
+.pizza-app,
+.shop-page,
+.pizza-card,
+.category-chip,
+.empty-cart,
+.cart-item,
+.cart-summary,
+.payment-card,
+.sort-area select {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}

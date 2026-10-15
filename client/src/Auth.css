@@ -1,0 +1,496 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background:
+    radial-gradient(circle at top left, #ffe3d4, transparent 38%),
+    #fff8f2;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 36px;
+  border: 1px solid #f0e4db;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(67, 37, 20, 0.1);
+}
+
+.auth-brand {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: #242124;
+  font-size: 25px;
+  font-weight: 850;
+}
+
+.auth-brand span {
+  color: #ff4b20;
+}
+
+.auth-eyebrow {
+  margin: 0 0 9px;
+  color: #ff4b20;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #242124;
+  font-size: 29px;
+  letter-spacing: -0.8px;
+}
+
+.auth-subtitle {
+  margin: 10px 0 25px;
+  color: #77717a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form label {
+  margin-top: 5px;
+  color: #353139;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-form input {
+  width: 100%;
+  min-height: 45px;
+  padding: 12px 13px;
+  border: 1px solid #e5ddd7;
+  border-radius: 9px;
+  outline: none;
+  background: #fffdfb;
+  color: #242124;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  border-color: #ff704b;
+  box-shadow: 0 0 0 3px rgba(255, 75, 32, 0.09);
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5ddd7;
+  border-radius: 9px;
+  background: #fffdfb;
+}
+
+.password-field input {
+  border: none;
+  background: transparent;
+}
+
+.password-field input:focus {
+  box-shadow: none;
+}
+
+.password-field button {
+  margin-right: 10px;
+  padding: 5px;
+  border: 0;
+  background: transparent;
+  color: #d74420;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2px 0 6px;
+  font-size: 12px;
+}
+
+.auth-links a,
+.auth-switch a {
+  color: #e94720;
+  font-weight: 700;
+}
+
+.auth-submit {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 9px;
+  border: 0;
+  border-radius: 10px;
+  background: #ff4b20;
+  color: #fff;
+  font-weight: 750;
+  transition: background 0.2s ease;
+}
+
+.auth-submit:hover {
+  background: #e83b14;
+}
+
+.auth-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.auth-switch {
+  margin: 22px 0 0;
+  color: #77717a;
+  font-size: 13px;
+  text-align: center;
+}
+
+.back-home {
+  display: block;
+  margin-top: 25px;
+  color: #77717a;
+  font-size: 12px;
+  text-align: center;
+}
+
+.auth-error,
+.auth-success {
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.auth-error {
+  background: #fff0ee;
+  color: #b42318;
+}
+
+.auth-success {
+  background: #edf9f0;
+  color: #18733b;
+}
+
+.verification-notice {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.verification-notice h2 {
+  color: #242124;
+  font-size: 21px;
+}
+
+.verification-notice p {
+  color: #77717a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.verification-icon {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff0e9;
+  color: #ff4b20;
+  font-size: 27px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 26px 21px;
+  }
+
+  .auth-card h1 {
+    font-size: 25px;
+  }
+}
+/* Forgot Password Page */
+.forgot-password-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #44251b 0%, transparent 40%),
+    linear-gradient(135deg, #171717, #29211e);
+  font-family: Arial, sans-serif;
+}
+
+.forgot-password-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 38px 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.forgot-password-icon {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff0e5;
+  font-size: 32px;
+}
+
+.forgot-password-card h1 {
+  margin: 0 0 12px;
+  color: #242424;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.forgot-password-card .subtitle {
+  margin-bottom: 26px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.forgot-password-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 16px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.forgot-password-card input:focus {
+  border-color: #f47b20;
+  box-shadow: 0 0 0 3px rgba(244, 123, 32, 0.12);
+}
+
+.forgot-password-card button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f47b20;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.forgot-password-card button:hover {
+  background: #dc6510;
+  transform: translateY(-1px);
+}
+
+.forgot-password-card button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.forgot-password-message {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.forgot-password-back {
+  display: inline-block;
+  margin-top: 24px;
+  color: #e96f16;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.forgot-password-back:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .forgot-password-card {
+    padding: 30px 22px;
+  }
+
+  .forgot-password-card h1 {
+    font-size: 24px;
+  }
+}
+/* ======================================
+   PIZZAHOUSE — DARK MODE
+====================================== */
+
+:root {
+  color-scheme: light;
+  --page-bg: #fffaf5;
+  --surface: #ffffff;
+  --text: #202024;
+  --muted: #696a73;
+  --border: #f0e5dc;
+  --input-bg: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #111214;
+  --surface: #1b1d21;
+  --text: #f5f5f5;
+  --muted: #b4b5bd;
+  --border: #34363d;
+  --input-bg: #24262b;
+}
+
+/* Main page */
+body,
+.pizza-app,
+.shop-page {
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+/* Headings and text */
+.section-heading h2,
+.pizza-name-row h3,
+.pizza-price,
+.shop-content > h1,
+.empty-cart h2,
+.cart-item-info h3,
+.cart-item-end > strong,
+.cart-summary h2,
+.payment-container > h1,
+.payment-card h2 {
+  color: var(--text);
+}
+
+.section-heading > div:first-child > p,
+.shop-subtitle,
+.empty-cart p,
+.cart-item-info p,
+.checkout-note {
+  color: var(--muted);
+}
+
+/* Cards and panels */
+.pizza-card,
+.category-chip,
+.state-message,
+.empty-cart,
+.cart-item,
+.cart-summary,
+.payment-card {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.pizza-description {
+  color: var(--muted);
+}
+
+/* Inputs */
+.sort-area select,
+.payment-card input,
+.payment-card textarea,
+.payment-card select {
+  background: var(--input-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.sort-area label,
+.sort-area > span {
+  color: var(--text);
+}
+
+.hero-search {
+  background: #ffffff;
+  color: #25252b;
+}
+
+/* Cart and payment */
+.quantity-controls {
+  border-color: var(--border);
+}
+
+.cart-summary hr,
+.payment-grand-total {
+  border-color: var(--border);
+}
+
+.razorpay-method {
+  background: #29201c;
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+.payment-subtitle,
+.payment-total-row,
+.payment-disclaimer {
+  color: var(--muted);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 39px;
+  padding: 0 12px;
+  border: 1px solid #514943;
+  border-radius: 12px;
+  background: #242221;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: #383330;
+  transform: translateY(-1px);
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  background: #f6a623;
+  color: #191919;
+  border-color: #f6a623;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  background: #ffc04d;
+}
+
+/* Smooth theme transition */
+body,
+.pizza-app,
+.shop-page,
+.pizza-card,
+.category-chip,
+.empty-cart,
+.cart-item,
+.cart-summary,
+.payment-card,
+.sort-area select {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
